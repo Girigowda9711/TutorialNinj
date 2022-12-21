@@ -1,4 +1,4 @@
-package com.TutorialNinja.TestCases;
+package com.TutorialNinja.Pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -28,7 +28,26 @@ public class LoginPage extends BaseClass {
 	}
 	
 	
+	public void clickOnMyAccount() {
+		lnk_MyAccount.click();
+	}
 	
+	
+	public void clickOnLoginLink() {
+		lnk_Login.click();
+	}
+	
+	
+	public void verifyCredentials() {
+		txt_Emailfield.sendKeys();
+		txt_passwordfield.sendKeys();
+	
+	}
+	
+	
+	public void clickOnSubitBtn() {
+		Btn_Login.click();
+	}
 	
 	
 	
